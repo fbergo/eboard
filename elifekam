@@ -61,6 +61,7 @@ install-bin: eboard zseal
 	$(INSTALL) -m 0755 eboard $(bindir)/eboard
 	$(INSTALL) -m 0755 eboard-config   $(bindir)/eboard-config
 	$(INSTALL) -m 0755 eboard-addtheme $(bindir)/eboard-addtheme
+	$(INSTALL) -d $(datadir)
 	$(INSTALL) -m 0755 zseal $(datadir)/timeseal.$(osname)
 
 install-man:
