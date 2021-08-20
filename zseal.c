@@ -282,7 +282,7 @@ static void zid(char *dest, int sz) {
     memset(tmp,0,512);
     if (fgets(tmp, 511, f)!=NULL) {
       zchomp(tmp);
-      strncpy(uname,tmp,127);
+      snprintf(uname,127,"%s",tmp);
     }
     pclose(f);
   }
